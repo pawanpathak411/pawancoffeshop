@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function gradecalc(){
+        const math = parseInt(prompt("enter your math marks :"));
+        const phy  = parseInt(prompt("enter your phy marks:"));
+        const chy  = parseInt(prompt("enter your chy marks:"));
+        const  avg = (math + phy + chy)/3
+    
+    let grade;
+    if(avg <75){
+        grade = "C";
+    }else if(avg >=75 && avg<90){
+        grade = "B";
+    }else if( avg>90){
+        grade = "A";
+    }
+    else{
+        grade = "fail";
+    }
+    document.write("avg marks"," ", avg);
+    document.write("grade"," ", grade);
+
+    }
+    gradecalc(); 
+    
+</script></body>
+</html>

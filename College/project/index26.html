@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculate(a){
+            var x = parseInt(document.calcform.num1.value);
+            var y = parseInt(document.calcform.num2.value);
+            var z = document.calcform.result;
+            if(a.value =="Add"){
+                z.value = x+y;
+            }else if(a.value =="sub"){
+                z.value = x-y;
+            }
+            else if(a.value =="mul"){
+                z.value = x*y;
+            }
+            else if(a.value =="Div"){
+                z.value = x/y;
+            }
+            else{
+                z.value = x%y;
+            }
+
+        }
+    </script>
+</body>
+</html>
